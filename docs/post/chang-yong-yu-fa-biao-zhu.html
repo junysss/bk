@@ -21,7 +21,9 @@ int main() {
 ```
 汇编：
 ```asm
-mov ax,0
+push 申请内容得地址
+call 0057e250
+add esp,4
 ```。">
 <meta property="og:title" content="常用语法标注">
 <meta property="og:description" content="C++：
@@ -35,7 +37,9 @@ int main() {
 ```
 汇编：
 ```asm
-mov ax,0
+push 申请内容得地址
+call 0057e250
+add esp,4
 ```。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://junysss.github.io/bk/post/chang-yong-yu-fa-biao-zhu.html">
@@ -115,7 +119,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <span class="pl-k">return</span> <span class="pl-c1">0</span>;
 }</pre></div>
 <p>汇编：</p>
-<div class="highlight highlight-source-assembly"><pre class="notranslate"><span class="pl-k">mov</span><span class="pl-en"> </span><span class="pl-v">ax</span><span class="pl-s1">,</span><span class="pl-c1">0</span></pre></div></div>
+<div class="highlight highlight-source-assembly"><pre class="notranslate"><span class="pl-k">push</span><span class="pl-en"> 申请内容得地址</span>
+<span class="pl-k">call</span><span class="pl-en"> 0057e250</span>
+<span class="pl-k">add</span><span class="pl-en"> </span><span class="pl-v">esp</span><span class="pl-s1">,</span><span class="pl-c1">4</span></pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
